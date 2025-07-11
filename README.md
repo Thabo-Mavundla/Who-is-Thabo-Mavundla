@@ -1,7 +1,3 @@
-Here's a clean and professional `README.md` for your portfolio project, based on your provided HTML code:
-
----
-
 # 💼 Thabo Mavundla - Personal Portfolio Website
 
 Welcome to my personal portfolio! This responsive website showcases my skills, experience, and projects in cybersecurity, embedded systems, and software development. It's designed to highlight my technical capabilities and provide an easy way for visitors, recruiters, and collaborators to get in touch.
@@ -91,6 +87,3 @@ Welcome to my personal portfolio! This responsive website showcases my skills, e
 
 This project is licensed under the [MIT License](LICENSE) — feel free to use and modify for personal or professional purposes.
 
----
-
-Let me know if you want a markdown version downloaded or a dark mode toggle added to your site!
