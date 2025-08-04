@@ -541,7 +541,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0; /* shorthand for top, left, bottom, right: 0 */
-  background: url('./assets/vecteezy_abstract-boxes-background-modern-technology-with-square_8171873.jpg') center/cover no-repeat;
+  background: url('./assets/Background2jpg') center/cover no-repeat;
   z-index: -1;
   display: block;
 }
