@@ -53,7 +53,7 @@
                 <button 
                     class="btn btn-color-1"
                     onclick="location.href='./#contact'">
-                 Contact Info
+                 Contact Me
                 </button>
             </div>
             <div id="socials-container">
@@ -472,27 +472,31 @@
             onclick="location.href='./#contact'"/>
     </section>
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img
-                 src="./assets/email.png" 
-                 alt="Email icon"
-                 class="icon contact-icon"
-                />
-                <p><a href="mailto:mavundlatm@icloud.com">mavundlatm@icloud.com</a></p>
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-form-container">
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Name</label>
             </div>
-            <div class="contact-info-container">
-                <img
-                 src="./assets/linkedin.png" 
-                 alt="LinkedIn icon"
-                 class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/thabo-mavundla-a21b26225/">LinkedIn</a></p>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Email</label>
             </div>
-        </div>
-    </section>
+            <div class="form-group">
+                <input type="text" id="subject" name="subject" required placeholder=" ">
+                <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-color-1">Send Message</button>
+            <p id="form-status"></p>
+        </form>
+    </div>
+</section>
     <footer>
         <nav>
             <div class="nav-links-container">
