@@ -464,17 +464,6 @@ article .icon {
   height: 2.5rem;
 }
 
-
-/* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
-}
 .toparrow {
     position: absolute;
     right: -5rem;
@@ -490,6 +479,17 @@ footer p {
 .toparrow:hover {
     transform: rotate(90deg) scale(1.2);
     filter: brightness(1.2);
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
 
 /* Add this to ensure the contact section has proper positioning context */
