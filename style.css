@@ -475,7 +475,28 @@ footer {
 footer p {
   text-align: center;
 }
+.toparrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    transform: rotate(90deg); /* Make it point upwards */
+}
 
+.toparrow:hover {
+    transform: rotate(90deg) scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Add this to ensure the contact section has proper positioning context */
+#contact {
+    position: relative;
+    /* ... your other contact styles ... */
+}
 /*Contact me page */
 .contact-form-container {
     display: flex;
