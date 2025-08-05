@@ -35,3 +35,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         statusElement.style.backgroundColor = "transparent";
     }, 5000);
 });
+
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
