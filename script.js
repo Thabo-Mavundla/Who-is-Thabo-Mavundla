@@ -43,3 +43,24 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+// Flip card functionality - button click only
+document.querySelectorAll('.flip-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const flipCard = this.closest('.flip-card');
+        flipCard.classList.toggle('flipped');
+        
+        // Remove hover effect if any exists
+        flipCard.style.pointerEvents = 'auto';
+    });
+});
+
+// Optional: Close card when clicking outside (remove if not needed)
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.flip-card')) {
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.classList.remove('flipped');
+        });
+    }
+});
