@@ -93,7 +93,7 @@ a:hover {
 .logo {
   font-size: 2rem;
   font-weight: 700;
-  color: #00070a;
+  color: #3b3b3b;
   letter-spacing: 0.03em;
   margin: 0;
 }
@@ -336,10 +336,11 @@ section {
   bottom: 2.5rem;
 }
 
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255, 0.5);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -356,7 +357,11 @@ section {
   width: 400px;
   margin: auto 0;
 }
-
+.text-container p {
+    color: rgb(255, 255, 255); /* Change text color to white */
+    font-size: 1.1rem; /* Slightly increase font size (from default 1rem) */
+    line-height: 1.2; /* Improve readability with more line spacing */
+}
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -404,7 +409,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: rgb(250, 250, 250, 0.5);
 }
 
 .project-img {
@@ -463,7 +468,7 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
-
+/* Replace the existing .toparrow styles with this: */
 .toparrow {
     position: absolute;
     right: -5rem;
@@ -481,21 +486,30 @@ article .icon {
     filter: brightness(1.2);
 }
 
-/* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
-}
-
 /* Add this to ensure the contact section has proper positioning context */
 #contact {
     position: relative;
     /* ... your other contact styles ... */
+}
+
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+footer .nav-links a {
+    color: white;
+}
+
+footer .nav-links a:hover {
+    color: #cccccc;
+    text-decoration-color: #cccccc;
 }
 /*Contact me page */
 .contact-form-container {
@@ -515,7 +529,7 @@ footer p {
     border-radius: 1.5rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: rgb(250, 250, 250, 0.5);
 }
 
 .form-group {
@@ -584,7 +598,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0; /* shorthand for top, left, bottom, right: 0 */
-  background: url('./assets/vecteezy_abstract-boxes-background-modern-technology-with-square_8171873.jpg') center/cover no-repeat;
+  background: url('./assets/wavy-black-white-background.jpg') center/cover no-repeat;
   z-index: -1;
   display: block;
 }
@@ -627,3 +641,270 @@ body::before {
 .btn-color-2 {
   transition: all 0.3s ease;
 }
+
+/* Certifications Section Centering */
+#certifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2vh; /* Reduced from 4vh */
+    height: auto;
+    min-height: 96vh; /* Ensures full viewport height */
+}
+
+#certifications .experience-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#certifications .about-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+#certifications .details-container > *:not(.btn) {
+    margin-bottom: 0.5rem;
+}
+
+/* Existing card styles remain the same */
+#certifications .details-container {
+    padding: 1.5rem;
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163, 0.5);
+    text-align: center;
+    width: 300px; /* Fixed width for consistent cards */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    align-items: center;
+    gap: 1rem;
+}
+#certifications .details-container .btn {
+    margin-top: auto; /* Pushes button to bottom */
+    align-self: center; /* Centers horizontally */
+    width: 80%; /* Slightly narrower than container */
+    max-width: 200px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    #certifications {
+        padding-top: 4vh;
+        height: auto;
+    }
+    
+    #certifications .details-container {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #certifications {
+        padding-top: 2vh;
+    }
+    
+    #certifications .details-container {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+/* Certifications Section - Matching Technical Competencies */
+#certifications .experience-sub-title {
+    color: rgb(89, 89, 89,);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+#certifications .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 300px;
+}
+
+#certifications .details-container p {
+    color: rgb(89, 89, 89);
+    font-size: 0.9rem;
+}
+
+#certifications .btn {
+    margin-top: auto;
+    width: 80%;
+    max-width: 200px;
+}
+
+/*/////////////////////////////*/
+/* Certifications Section */
+#certifications {
+    position: relative;
+    height: auto;
+    padding-bottom: 4rem;
+}
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 10%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 440px;
+    perspective: 1000px;
+    margin-bottom: 1rem;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-card-front {
+    background-color: rgba(255, 255, 255, 0.5); /* 50% opaque */
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    justify-content: space-between;
+    backdrop-filter: blur(5px); /* Optional: adds frosted glass effect */
+}
+
+.flip-card-back {
+    background-color: rgba(248, 249, 250, 0.5); /* 50% opaque */
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    transform: rotateY(180deg);
+    overflow-y: auto;
+    justify-content: flex-start;
+    backdrop-filter: blur(5px); /* Optional: adds frosted glass effect */
+}
+
+.certification-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.certification-title {
+    margin: 0.5rem 0;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.certification-issuer {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.certification-details {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.certification-details p {
+    margin: 0.5rem 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.flip-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background: rgba(40, 167, 69, 0.8); /* Slightly transparent */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    width: 120px;
+    margin-top: auto;
+}
+
+.flip-btn:hover {
+    background: rgba(33, 136, 56, 0.9); /* Slightly darker on hover */
+    transform: translateY(-2px);
+}
+
+/* Font classes to match technical competencies */
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .certifications-container {
+        margin: 2rem 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flip-card {
+        width: 280px;
+        height: 420px;
+    }
+}
+
+
