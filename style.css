@@ -369,10 +369,12 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+    /* Ensure this matches your technical competencies headings */
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
 }
 
 .experience-details-container {
@@ -906,5 +908,107 @@ body::before {
         height: 420px;
     }
 }
+/* Contact Info Card Styles */
+.contact-info-card {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
 
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
 
+.contact-info-item p {
+    color: rgb(53, 53, 53);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: auto;
+}
+
+.contact-social-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-social-icon:hover {
+    transform: scale(1.2);
+}
+/* Contact Section Layout */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    align-items: stretch; /* This makes both children equal height */
+}
+
+.contact-info-card {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    padding: 2rem;
+    width: 40%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly */
+    height: 100%; /* Takes full height of parent */
+}
+
+.contact-card-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-form-container {
+    width: 60%;
+    max-width: 600px;
+    height: 100%; /* Takes full height of parent */
+}
+
+/* Keep all the existing .contact-info-item, .contact-icon, etc. styles from previous answer */
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-info-card,
+    .contact-form-container {
+        width: 90%;
+        max-width: 100%;
+    }
+}
