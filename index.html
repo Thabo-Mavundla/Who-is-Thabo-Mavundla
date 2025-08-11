@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <nav id="desktop-nav">
@@ -496,6 +497,7 @@
                         </button>
                     </div>
                     <button class="flip-btn poppins-medium">Back to Front</button>
+                    
                 </div>
             </div>
         </div>
@@ -615,11 +617,13 @@
             class="icon arrow"
             onclick="location.href='./#contact'"/>
     </section>
-    <section id="contact">
+ <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
+    <h1 class="title">Contact Me</h1>  
+    <div class="contact-container">
     <div class="contact-form-container">
         <form id="contactForm" class="contact-form">
+            <!-- Keep your existing form content here -->
             <div class="form-group">
                 <input type="text" id="name" name="name" required placeholder=" ">
                 <label for="name">Name</label>
@@ -640,15 +644,30 @@
             <p id="form-status"></p>
         </form>
     </div>
-
- <img 
-        src="./assets/uparrrow.png" 
-        alt="Back to top" 
-        class="icon toparrow"
-        onclick="scrollToTop()"
-    />
-    </section>
+     <div class="contact-info-card">
+        <h3 class="contact-card-title">Contact Information</h3>
+        <div class="contact-info-item">
+            <i class="fas fa-phone contact-icon"></i>
+            <p>+27 81 572 0395</p>
+        </div>
+        <div class="contact-info-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <p>Pretoria, South Africa</p>
+        </div>
+        <div class="contact-info-item">
+            <img src="./assets/email.png" alt="Email icon" class="contact-icon">
+            <p>mavundlatm@icloud.com</p>
+        </div>
+        <div class="contact-socials">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="contact-social-icon" 
+                 onclick="location.href='https://www.linkedin.com/in/thabo-mavundla-a21b26225/'">
+            <img src="./assets/github.png" alt="GitHub" class="contact-social-icon" 
+                 onclick="location.href='https://github.com/Thabo-Mavundla'">
+        </div>
+    </div>
     
+</div>
+</section>  
     <footer>
         <nav>
             <div class="nav-links-container">
